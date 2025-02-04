@@ -9,9 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
 
 body{
-    display: flex;
-    align-items: center;
     background: ${(props) => props.theme['background']};
-    margin: 2rem 10rem;
+    border: 1px solid red;
 }
 `
