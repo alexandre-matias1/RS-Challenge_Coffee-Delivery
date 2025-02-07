@@ -1,13 +1,12 @@
 import styled from "styled-components";
 export const CartContainer = styled.header`
-  width: 100%;
+  max-width: 1160px;
+  padding: 32px 20px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
   align-items: center;
-  border: 1px solid red;
   height: 6.5rem;
-  padding: 0 10rem;
 `;
 
 export const RightContainer = styled.div`
@@ -49,7 +48,7 @@ export const CartCounterContainer = styled.a`
     color: ${(props) => props.theme["white"]};
     text-decoration: none;
     position: absolute;
-    background-color: ${(props) => props.theme["yellow-300"]};;
+    background-color: ${(props) => props.theme["yellow-300"]};
     top: -14px;
     left: 34px;
     padding: 4px 9px;

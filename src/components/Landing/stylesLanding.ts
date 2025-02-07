@@ -1,13 +1,69 @@
 import styled from "styled-components";
 
-export const LandingContainer = styled.div`
-  width: 100%;
-  height: 34rem;
-  background: rgb(219, 172, 44);
-  background: radial-gradient(
-    circle,
-    rgba(219, 172, 44, 0.22872899159663862) 0%,
-    rgba(184, 152, 251, 0.16150210084033612) 60%,
-    rgba(128, 71, 248, 0.09147408963585435) 86%
-  );
+export const FourItensContainer = styled.div`
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  width: 35.45rem;
+  margin-top: 4.125rem;
+
+  span {
+    width: 18.375rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: ${(props) => props.theme["base-text"]};
+    white-space: nowrap;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 100%;
+  }
+
+  .box-1 {
+    background: ${(props) => props.theme["yellow-300"]};
+  }
+  .box-2 {
+    background: ${(props) => props.theme["base-text"]};
+  }
+  .box-3 {
+    background: ${(props) => props.theme["yellow-200"]};
+  }
+  .box-4 {
+    background: ${(props) => props.theme["purple-200"]};
+  }
+`;
+
+export const LeftContainer = styled.div`
+  margin-top: 5.875rem;
+  width: 36.75rem;
+  h1 {
+    font-family: "Baloo 2", sans-serif;
+    font-size: 3rem;
+    line-height: 130%;
+    font-weight: 900;
+    color: ${(props) => props.theme["base-title"]};
+    //base/title
+    //text regular l
+  }
+
+  .subtitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 130%;
+    font-weight: 500;
+    color: ${(props) => props.theme["base-subtitle"]};
+  }
+`;
+
+export const RightContainer = styled.div`
+  margin-top: 5.875rem;
 `;
